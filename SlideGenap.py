@@ -122,3 +122,71 @@ print (everything)       # Prints 'em all!
 
 
 #page30
+print type(42)      #<type 'int'>
+print type(4.2)     #<type 'float'>
+print type('spam')  #<type 'str'>
+# ---
+def speak(message): return message
+if happy(): speak("I'm happy!")
+elif sad(): speak("I'm sad.")
+else: speak("I don't know what I'm feeling.")
+# ---
+def shut_down(s):
+    if s=="yes": return "Shutting down"
+    elif s=="no": return "Shutdown aborted"
+    else: return "Sorry"
+    
+#page32
+def hotel_cost(nights): return 140*nights
+def plane_ride_cost(city):
+    if city=="Charlotte": return 183
+    elif city=="Tampa": return 220
+    elif city=="Pittsburgh": return 222
+    elif city=="Los Angeles": return 475
+def rental_car_cost(days):
+    costperday = 40
+    if days >= 7: total = days * costperday - 50
+    elif days >=3: total = days * costperday - 20
+    else: total = days * costperday
+    return total
+def trip_cost(city,days,spending_money):
+    return rental_car_cost(days)+hotel_cost(days)+plane_ride_cost(city)+spending_money
+print (trip_cost("Los Angeles",5,600))
+
+
+#page34
+# list_name = [item_1, item_2], empty []
+zoo_animals = ["pangolin", "cassowary", "sloth", "gajah"];
+if len(zoo_animals) > 3:
+    print ("The first animal at the zoo is the " + zoo_animals[0])
+    print ("The second animal at the zoo is the " + zoo_animals[1])
+    print ("The third animal at the zoo is the " + zoo_animals[2])
+    print ("The fourth animal at the zoo is the " + zoo_animals[3])
+    
+ 
+
+#page38
+# 1
+my_list = [1,9,3,8,5,7]
+for number in my_list: print (2*number)
+# 2    
+# .sort
+start_list = [5, 3, 1, 2, 4]
+square_list = []
+for num in start_list:
+    square_list.append(num**2)
+square_list.sort()
+print (square_list)
+
+#page40
+menu = {} # Empty dictionary
+menu['Chicken Alfredo'] = 14.50 # Adding new key-value pair
+print (menu['Chicken Alfredo'])
+# append
+menu['karedok'] = 2.2
+menu['lotek'] = 2.3
+menu['rujak'] = 3.3
+print ("There are " + str(len(menu)) + " items on the menu.")
+print (menu)
+
+#page42

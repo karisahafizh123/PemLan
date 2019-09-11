@@ -80,23 +80,45 @@ color = input("What is your favorite color?")
 print ("Ah, so your name is %s, your quest is %s, " \
 "and your favorite color is %s." % (name, quest, color))
 
-#page14
-bool_one = True    # 17 < 328    
-bool_two = True    # 100 == (2 * 50)
-bool_three = True  # 19 <= 19 
-bool_four = False  # -22 >= -18 
-bool_five = False  # 99 != (98 + 1)
-bool_one = False   # (20 - 10) > 15
-bool_two = False   # (10 + 17) == 3**16
-bool_three = False # 1**2 <= -1
-bool_four = True   # 40 * 4 >= -4
-bool_five = False  # 100 != 10**2
-# -----
-bool_one = 3 < 5     # True
-bool_two = 3 > 5     # False
-bool_three = 5 == 5  # True
-bool_four = 3 != 3   # False
-bool_five = 3 <= 3   # True
+
+#page22
+print ("Welcome to the Pig Latin Translator!")
+original = input("Enter a word:")
+if len(original) > 0 and original.isalpha():
+    print (original)
+else:
+    print ("empty")
+    
+    
+#page26
+def square(n):
+    squared = n**2
+    print ("%d squared is %d." % (n, squared))
+    return squared
+square(10)
+# ---
+def power(base, exponent):  # Add your parameters here!
+    result = base**exponent
+    print ("%d to the power of %d is %d." % (base, exponent, result))
+power(37,4)  # Add your arguments here!
 
 
-#page16
+#page28
+# 1
+import math
+print (math.sqrt(25))
+# 2
+from math import sqrt
+print (sqrt(25))
+from math import *
+print (sqrt(25))
+# 3
+import math            
+everything = dir(math) # Sets everything to a list of things from math
+print (everything)       # Prints 'em all!
+"""
+['__doc__', '__name__', '__package__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'copysign', 'cos', 'cosh', 'degrees', 'e', 'erf', 'erfc', 'exp', 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'hypot', 'isinf', 'isnan', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'modf', 'pi', 'pow', 'radians', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'trunc']
+"""
+
+
+#page30

@@ -1,0 +1,31 @@
+#page4
+  print ("Welcome to Python!")
+  my_variable = 10
+  my_int = 7
+  my_float = 1.23
+  my_bool = True
+  # change value
+  my_int = 7
+  my_int = 3
+  print (my_int)
+
+
+#page6
+# single line comment
+"""test
+multi lines comment
+"""
+addition = 72 + 23
+subtraction = 108 - 204
+multiplication = 108 * 0.5
+division = 108 / 9
+# addition
+count_to = 5000 + 6000.6
+print (count_to)
+# square, exponentiation, to the power of
+eggs = 10**2
+print (eggs)
+# modulo
+spam = 5 % 4
+print (spam)
+# 1, modulo

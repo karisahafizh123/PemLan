@@ -2,6 +2,6 @@
 
 Repository tugas Pemrograman lanjut milik
 
-18117022 Karisa Ardelia Hanifah
+18117022 Karisa Ardelia Hanifah/karisaardelia
 
-18117030 Hafizh Mulya H.
+18117030 Hafizh Mulya H./hafizhmh
